@@ -3,8 +3,9 @@
   "optionalDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TencentWSRD/isomorphic-pkg-reader.git"
+    "url": "git+https://github.com/JesseWo/isomorphic-pkg-reader.git"
   },
+  "main":"index.js",
   "scripts": {
     "start": "node ./example/webpack.config.js & node ./example/server"
   },
@@ -13,12 +14,13 @@
     "name": "xiaoyuze88@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/TencentWSRD/isomorphic-pkg-reader/issues"
+    "url": "https://github.com/JesseWo/isomorphic-pkg-reader/issues"
   },
   "dependencies": {
     "buffer": "^5.0.7",
     "bytebuffer": "^5.0.1",
     "inherits": "^2.0.1",
+    "isomorphic-pkg-reader": "^1.1.21",
     "isomorphic-png.js": "^0.2.4",
     "isomorphic-unzip": "^1.1.0",
     "xmldom": "^0.1.22"
@@ -37,7 +39,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "directories": {},
-  "homepage": "https://github.com/TencentWSRD/isomorphic-pkg-reader#readme",
+  "homepage": "https://github.com/JesseWo/isomorphic-pkg-reader#readme",
   "keywords": [
     "Javascript",
     "NodeJS",
