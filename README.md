@@ -1,4 +1,15 @@
 # isomorphic-pkg-reader
+npm仓库中的官方版本更新不及时，有BUG，所以fork过来并在 `package.json` 中增加 `files` 字段.
+在项目中直接通过以下方式进行依赖：
+```json
+...
+"dependencies": {
+    "isomorphic-pkg-reader": "git+https://github.com/JesseWo/isomorphic-pkg-reader.git",
+    
+  },
+...
+```
+---
 Read IOS/Android package's(.apk/.ipa ) manifest info, for NodeJS/Webpack/Browserify.
 
 ## Introduction
