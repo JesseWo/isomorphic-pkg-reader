@@ -5,7 +5,9 @@
     "type": "git",
     "url": "git+https://github.com/JesseWo/isomorphic-pkg-reader.git"
   },
-  "main":"index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "start": "node ./example/webpack.config.js & node ./example/server"
   },
