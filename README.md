@@ -9,6 +9,23 @@ npm仓库中的官方版本更新不及时，有BUG，所以fork过来并在 `pa
   },
 ...
 ```
+
+新增: node环境支持 withIcon
+```javascript
+const PkgReader = require('isomorphic-pkg-reader');
+const reader = new PkgReader(pkgPath, extension, {
+    withIcon: true,
+    iconType: 'buffer',  // 'buffer' or 'base64', default value is 'buffer'
+    searchResource: true
+});
+reader.parse(function (err, pkgInfo) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('pkg info:', pkgInfo);   
+});
+```
 ---
 Read IOS/Android package's(.apk/.ipa ) manifest info, for NodeJS/Webpack/Browserify.
 
